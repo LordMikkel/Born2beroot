@@ -14,16 +14,6 @@
   This comprehensive guide covers the configuration of a headless Debian server with strict security protocols, virtualization, and automation. It breaks down the core concepts, technical implementations, and essential system administration skills.
 </div>
 
-<hr>
-
-## 📋 Table of Contents
-- [Key Concepts](#-key-concepts-explored)
-- [Technologies & Tools](#-technologies--tools)
-- [System Architecture](#-system-architecture--folder-structure)
-- [Challenges & Learnings](#-challenges-and-learnings)
-- [Skills Acquired](#-skills-acquired)
-
-<hr>
 
 ## 🌟 Key Concepts Explored
 
