@@ -29,13 +29,13 @@
 
 <hr>
 
-### 1. 🖥️ Virtual Machines (VMs)
+### 🖥️ Virtual Machines (VMs)
 A VM simulates a computer within your physical machine, allowing you to run isolated operating systems. Using **VirtualBox** to create a Debian VM teaches how hypervisors allocate resources (CPU, RAM, storage) between the host (physical machine) and guest (VM). Key advantages:
 - Run multiple OS environments simultaneously
 - Safely test configurations without affecting the host
 - Efficiently share hardware resources
 
-### 2. 🔪 LVM (Logical Volume Manager)
+### 🔪 LVM (Logical Volume Manager)
 LVM abstracts storage management, enabling flexible disk allocation beyond traditional partitioning:
 
 - **Physical Volumes (PVs)**: Raw storage devices (disks or partitions)
@@ -44,22 +44,22 @@ LVM abstracts storage management, enabling flexible disk allocation beyond tradi
 
 By encrypting LVs, you ensure data protection even if physical access to the disk is compromised.
 
-### 3.🛠️ Sudo (Superuser Do)
-Implemented secure privilege escalation:
+### 🛠️ Sudo (Superuser Do)
+Sudo is a powerful command-line utility that allows permitted users to execute commands as the superuser:
 
 - **Granular permissions** via custom rules in /etc/sudoers.d/
 - **Password authentication** required for all sudo commands
 - **Session logging** to /var/log/auth.log for audit trails
 
-📦 APT vs Aptitude
-Key technical differences in package management:
+### 📦 APT vs Aptitude
+Both APT (Advanced Package Tool) and Aptitude are package management tools for Debian-based systems:
 
 - **APT:** Pure CLI tool • Uses apt-get/apt commands for basic operations
 - **Aptitude:** Hybrid CLI/TUI • Interactive interface with keyboard navigation
 - **APT:** Minimal dependency resolution • Fails on complex conflicts
 - **Aptitude:** Smart solver • Auto-suggests dependency fixes
 
-🖥️ Why No GUI?
+### 🖥️ Why No GUI?
 Designed for efficiency and hardening:
 
 - **Resource conservation:** Saves CPU/RAM for critical services
@@ -67,7 +67,7 @@ Designed for efficiency and hardening:
 - **Headless optimization:** Aligns with server/VM best practices
 - **SSH compatibility:** Streamlines remote management workflows
 
-### 3. Security & Hardening
+### Security & Hardening
 
 #### 🛡️ AppArmor
 A Mandatory Access Control (MAC) system that restricts program capabilities by confining applications to a limited set of resources. AppArmor profiles define what files a program can access and what operations it can perform, providing protection against vulnerabilities and exploits.
@@ -100,7 +100,7 @@ Created a structured access control system:
 - Implemented logging for all sudo commands
 - Applied principle of least privilege across the system
 
-### 4. Automation & Monitoring
+### Automation & Monitoring
 
 #### 📜 Bash Scripting
 Created `monitoring.sh` to track real-time metrics including:
@@ -117,7 +117,7 @@ The system's task scheduler that enables:
 - Scheduled backups and updates
 - Custom timing specifications for recurring tasks
 
-### 5. Bonus: WordPress & Web Services
+### ⭐ Bonus: WordPress & Web Services
 
 #### Web Stack Components
 - **Lighttpd**: A lightweight, high-performance web server optimized for speed, efficiency, and minimal resource usage
