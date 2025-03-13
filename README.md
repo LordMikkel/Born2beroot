@@ -44,6 +44,29 @@ LVM abstracts storage management, enabling flexible disk allocation beyond tradi
 
 By encrypting LVs, you ensure data protection even if physical access to the disk is compromised.
 
+### 3.🛠️ Sudo (Superuser Do)
+Implemented secure privilege escalation:
+
+- **Granular permissions** via custom rules in /etc/sudoers.d/
+- **Password authentication** required for all sudo commands
+- **Session logging** to /var/log/auth.log for audit trails
+
+📦 APT vs Aptitude
+Key technical differences in package management:
+
+- **APT:** Pure CLI tool • Uses apt-get/apt commands for basic operations
+- **Aptitude:** Hybrid CLI/TUI • Interactive interface with keyboard navigation
+- **APT:** Minimal dependency resolution • Fails on complex conflicts
+- **Aptitude:** Smart solver • Auto-suggests dependency fixes
+
+🖥️ Why No GUI?
+Designed for efficiency and hardening:
+
+- **Resource conservation:** Saves CPU/RAM for critical services
+- **CLI mastery:** Forces hands-on Linux sysadmin skill development
+- **Headless optimization:** Aligns with server/VM best practices
+- **SSH compatibility:** Streamlines remote management workflows
+
 ### 3. Security & Hardening
 
 #### 🛡️ AppArmor
@@ -190,3 +213,11 @@ This project has provided a comprehensive foundation in enterprise-level server 
 - **Service Deployment**: Configuring web servers, databases, and application environments securely and efficiently.
 
 This hands-on experience has demonstrated the interconnected nature of various system components and the importance of holistic security approaches in Linux environments.
+
+<hr>
+
+## 🏆 Credits
+
+Developed by **Mikel Garrido** as part of the 42 curriculum.
+🔗 [GitHub: LordMikkel](https://github.com/LordMikkel)
+
