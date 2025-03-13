@@ -8,9 +8,13 @@
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white)
 </div>
 
+<hr>
+
 <div align="center">
   This comprehensive guide covers the configuration of a headless Debian server with strict security protocols, virtualization, and automation. It breaks down the core concepts, technical implementations, and essential system administration skills.
 </div>
+
+<hr>
 
 ## 🌟 Key Concepts Explored
 
