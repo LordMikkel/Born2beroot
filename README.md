@@ -29,24 +29,18 @@
 
 <hr>
 
-### 1. Virtual Machines (VMs)
+### 1. 🖥️ Virtual Machines (VMs)
 A VM simulates a computer within your physical machine, allowing you to run isolated operating systems. Using **VirtualBox** to create a Debian VM teaches how hypervisors allocate resources (CPU, RAM, storage) between the host (physical machine) and guest (VM). Key advantages:
 - Run multiple OS environments simultaneously
 - Safely test configurations without affecting the host
 - Efficiently share hardware resources
 
-### 2. LVM (Logical Volume Manager)
+### 2. 🔪 LVM (Logical Volume Manager)
 LVM abstracts storage management, enabling flexible disk allocation beyond traditional partitioning:
 
 - **Physical Volumes (PVs)**: Raw storage devices (disks or partitions)
 - **Volume Groups (VGs)**: Pools of PVs that create a unified storage resource
 - **Logical Volumes (LVs)**: Virtual partitions that can be resized dynamically
-
-LVM offers significant benefits like:
-- Resize volumes without downtime
-- Add storage capacity on-the-fly
-- Create snapshots for backup purposes
-- Migrate data between physical disks without disruption
 
 By encrypting LVs, you ensure data protection even if physical access to the disk is compromised.
 
@@ -149,31 +143,9 @@ The system's task scheduler that enables:
 
 <hr>
 
-### 👮 Security Frameworks
+## 🗂️ System Architecture & Folder Structure
 
 <hr>
-
-#### UFW (Uncomplicated Firewall)
-UFW provides a simplified interface to the complex iptables firewall system. It uses a rule-based model where you can:
-- Allow or deny traffic based on port numbers
-- Restrict connections by IP address or subnet
-- Create named application profiles
-- Log firewall events for security analysis
-
-#### SSH (Secure Shell)
-SSH creates encrypted tunnels for secure remote administration. Key security features include:
-- Custom port configuration to reduce automated scanning
-- Disabling direct root login
-- Key-based authentication
-- Connection attempt limiting
-
-#### MariaDB
-A relational database management system that powers WordPress and other dynamic applications, with robust security configurations.
-
-#### Cron
-A time-based job scheduler in Unix-like systems for automating recurring tasks.
-
-## 🗂️ System Architecture & Folder Structure
 
 ### Key System Directories
 ```
@@ -201,13 +173,9 @@ A time-based job scheduler in Unix-like systems for automating recurring tasks.
 
 <hr>
 
-## 🛑 Challenges and Learnings
-
-Throughout this project, I encountered and overcame several technical challenges including LVM encryption implementation, SSH hardening, firewall configuration, creating persistent monitoring solutions, and securing database access. Each challenge presented unique learning opportunities and led to deeper understanding of Linux system administration.
+## 📚 Challenges and Learnings
 
 <hr>
-
-## 📚 Skills Acquired
 
 This project has provided a comprehensive foundation in enterprise-level server administration. Key skills developed include:
 
