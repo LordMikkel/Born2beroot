@@ -149,7 +149,7 @@ The system's task scheduler that enables:
 
 <hr>
 
-### Security Frameworks
+### 👮 Security Frameworks
 
 <hr>
 
