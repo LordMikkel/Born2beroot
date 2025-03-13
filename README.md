@@ -1,4 +1,5 @@
 <div align="center">
+  
 # 🚀 Born2beRoot: Building a Secure Debian Server from Scratch
   
 ![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)
