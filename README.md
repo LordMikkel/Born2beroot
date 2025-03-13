@@ -16,6 +16,15 @@
 
 <hr>
 
+## 📋 Table of Contents
+- [Key Concepts](#-key-concepts-explored)
+- [Technologies & Tools](#-technologies--tools)
+- [System Architecture](#-system-architecture--folder-structure)
+- [Challenges & Learnings](#-challenges-and-learnings)
+- [Skills Acquired](#-skills-acquired)
+
+<hr>
+
 ## 🌟 Key Concepts Explored
 
 ### 1. Virtual Machines (VMs)
