@@ -11,7 +11,7 @@
 <hr>
 
 <div align="center">
-  This comprehensive guide covers the configuration of a headless Debian server with strict security protocols, virtualization, and automation. It breaks down the core concepts, technical implementations, and essential system administration skills.
+  This comprehensive guide covers the configuration of a Debian server with strict security protocols, virtualization, and automation. It breaks down the core concepts, technical implementations, and essential system administration skills.
 </div>
 
 <hr>
@@ -47,7 +47,7 @@ By encrypting LVs, you ensure data protection even if physical access to the dis
 ### 🛠️ Sudo (Superuser Do)
 Sudo is a powerful command-line utility that allows permitted users to execute commands as the superuser:
 
-- **Granular permissions** via custom rules in /etc/sudoers.d/
+- **Fine-grained permissions** via custom rules in /etc/sudoers.d/
 - **Password authentication** required for all sudo commands
 - **Session logging** to /var/log/auth.log for audit trails
 
@@ -143,25 +143,26 @@ The system's task scheduler that enables:
 | `lsblk` | Lists block devices (hard drives, partitions, etc.) in a tree-format |
 | `df -h` | Reports filesystem disk space usage in human-readable format |
 | `vmstat` | Reports virtual memory statistics including processes, memory, paging, and CPU activity |
-| `ip link` | Shows network interfaces and their state |
 
 #### Text Processing
 | Command | Description |
 |:--------|:------------|
 | `wc` | Counts lines, words, and characters in files |
-| `awk` | Powerful text processing tool for data extraction and reporting |
-| `grep` | Searches for patterns in text and filters output |
+| `awk` | Processes columns: Extracts and manipulates data based on columns or fields |
+| `grep` | Filters rows: Searches for patterns in text and displays matching lines |
 
 #### Service Management
 | Command | Description |
 |:--------|:------------|
 | `systemctl` | Controls the systemd system and service manager |
 | `journalctl` | Queries and displays logs from journald |
+| `hostnamectl` | Manages the system hostname and related settings (e.g., static/transient) |
 
 #### Network Analysis
 | Command | Description |
 |:--------|:------------|
-| `ss` | Shows socket statistics (replaced netstat) |
+| `ip link` | Shows network interfaces and their state |
+| `ss` | inspecting network sockets for Monitoring network connections in real-time |
 | `netstat` | Network statistics tool for connections and routing tables |
 
 <hr>
@@ -172,8 +173,9 @@ The system's task scheduler that enables:
 
 ### Key System Directories
 ```
-/ (root)
-├── /boot           # Kernel images and bootloader configuration
+/boot - Mounted from separate unencrypted partition (sda1)
+
+/ (root) -  Mounted from LVMGroup-root on encrypted volume (sda5_crypt)
 ├── /etc            # System-wide configuration files
 │   ├── /ssh        # SSH server and client configurations
 │   ├── /ufw        # Firewall rules and settings
@@ -181,11 +183,14 @@ The system's task scheduler that enables:
 │   ├── /passwd     # User account information
 │   └── /sudoers.d  # Custom sudo permissions
 ├── /var            # Variable data files
-│   ├── /log        # System logs including sudo operations
+│   ├── /log        # System logs - Mounted from LVMGroup-var-log
 │   ├── /www/html   # Web server document root
-│   └── /lib/mysql  # MariaDB database files
+│   └── /lib/mysql  # Database files
 ├── /bin & /sbin    # Essential binaries and system admin tools
-└── /home           # User home directories with personal files
+├── /srv            # Service data - Mounted from LVMGroup-srv
+├── /tmp            # Temporary files - Mounted from LVMGroup-tmp
+└── /home           # User home directories - Mounted from LVMGroup-home
+
 ```
 
 ### Logical Volume Structure
