@@ -19,7 +19,7 @@
 ## 📋 Table of Contents
 - [Key Concepts](#-key-concepts-explored)
 - [Technologies & Tools](#-technologies--tools)
-- [System Architecture](#-system-architecture--&--folder-structure)
+- [System Architecture](#%EF%B8%8F-system-architecture--folder-structure)
 - [Challenges & Learnings](#-challenges-and-learnings)
 
 <hr>
