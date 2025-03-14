@@ -1,4 +1,4 @@
-xit<div align="center">
+<div align="center">
   
 # 🤖 Born2beRoot: Building a Secure Debian Server from Scratch
   
