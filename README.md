@@ -239,6 +239,13 @@ It collects and displays the following information:
 
 <hr>
 
+### Logical Volume Structure
+- **System Volume**: Contains root filesystem
+- **Home Volume**: Separate storage for user data
+- **Var Volume**: Isolated space for logs and web content
+- **Swap Volume**: Virtual memory extension
+
+
 ### Key System Directories
 ```
 /boot - Mounted from separate unencrypted partition (sda1)
@@ -260,13 +267,6 @@ It collects and displays the following information:
 └── /home           # User home directories - Mounted from LVMGroup-home
 
 ```
-
-### Logical Volume Structure
-- **System Volume**: Contains root filesystem
-- **Home Volume**: Separate storage for user data
-- **Var Volume**: Isolated space for logs and web content
-- **Swap Volume**: Virtual memory extension
-
 <hr>
 
 ## 🚀 Getting Started: test yourself the Virtual Machine
