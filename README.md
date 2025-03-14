@@ -274,6 +274,7 @@ It collects and displays the following information:
 <hr>
 
 This pre-configured Debian virtual machine is available for download at:
+
 [born2beroot_migarrid.ova](https://mega.nz/file/dNtRAD6R#-9eB0DRIbEJJw2SD9x_k1T6DJ5G1ro7VzAxfSxkGedM)
 
 ### 🔑 Login Credentials
@@ -308,9 +309,9 @@ To connect to the VM remotely via SSH:
 
 1. Ensure the VM is running
 2. From your host machine, use:
-   ```
-   ssh migarrid@localhost -p 4242
-   ```
+```
+ssh migarrid@localhost -p 4242
+```
 3. Enter the password when prompted: `Mikel42bcn-`
 
 
