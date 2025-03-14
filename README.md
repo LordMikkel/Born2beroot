@@ -166,20 +166,8 @@ The system's task scheduler that enables:
 | `netstat` | Network statistics tool for connections and routing tables |
 
 📊 Monitoring Script
-The monitoring.sh script provides a comprehensive overview of the system's status. It collects and displays the following information:
 
-Architecture: Operating system and kernel version
-Physical CPU: Number of physical cores
-Virtual CPU: Number of virtual processors
-Memory Usage: Used/total memory and percentage
-Disk Usage: Used/total disk space and percentage
-CPU Load: Current utilization percentage
-Last Boot: Date and time of the last system start
-LVM Use: Indicates if the system is using LVM
-TCP Connections: Number of established TCP connections
-Logged Users: Number of currently connected users
-Network: IP and MAC address of the network interface
-Sudo: Number of commands executed with sudo
+The monitoring.sh script provides a comprehensive overview of the system's status
 
 ```
 #!/bin/bash
@@ -240,6 +228,20 @@ wall "  #Architecture: $arch
   #Network: IP $ip ($mac)
   #Sudo: $cmnd cmd"
 ```
+It collects and displays the following information:
+
+Architecture: Operating system and kernel version
+Physical CPU: Number of physical cores
+Virtual CPU: Number of virtual processors
+Memory Usage: Used/total memory and percentage
+Disk Usage: Used/total disk space and percentage
+CPU Load: Current utilization percentage
+Last Boot: Date and time of the last system start
+LVM Use: Indicates if the system is using LVM
+TCP Connections: Number of established TCP connections
+Logged Users: Number of currently connected users
+Network: IP and MAC address of the network interface
+Sudo: Number of commands executed with sudo
 
 <hr>
 
@@ -277,7 +279,7 @@ wall "  #Architecture: $arch
 
 <hr>
 
-## 🚀🖥️ Getting Started: Using the Virtual Machine
+## 🖥️ Getting Started: Using the Virtual Machine
 
 <hr>
 
