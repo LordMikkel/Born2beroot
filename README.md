@@ -287,7 +287,7 @@ Sudo: Number of commands executed with sudo
 <hr>
 
 This pre-configured Debian virtual machine is available for download at:
-https://mega.nz/file/dNtRAD6R#-9eB0DRIbEJJw2SD9x_k1T6DJ5G1ro7VzAxfSxkGedM
+[born2beroot_migarrid.ova](https://mega.nz/file/dNtRAD6R#-9eB0DRIbEJJw2SD9x_k1T6DJ5G1ro7VzAxfSxkGedM)
 
 ### 🔑 Login Credentials
 - **Username**: migarrid
@@ -336,13 +336,9 @@ To connect to the VM remotely via SSH:
 This project has provided a comprehensive foundation in enterprise-level server administration. Key skills developed include:
 
 - **Security Implementation**: Creating defense-in-depth strategies with multiple security layers, implementing least-privilege access control, and enforcing strong authentication.
-
 - **System Administration**: Managing packages, configuring services, monitoring system health, and performing routine maintenance tasks.
-
 - **Network Management**: Setting up secure remote access, configuring firewalls, and implementing proper network isolation.
-
 - **Automation**: Developing scripts for system monitoring and maintenance, scheduling recurring tasks, and creating efficient workflows.
-
 - **Service Deployment**: Configuring web servers, databases, and application environments securely and efficiently.
 
 This hands-on experience has demonstrated the interconnected nature of various system components and the importance of holistic security approaches in Linux environments.
