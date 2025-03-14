@@ -1,6 +1,6 @@
 <div align="center">
   
-# 🚀 Born2beRoot: Building a Secure Debian Server from Scratch
+# 🤖 Born2beRoot: Building a Secure Debian Server from Scratch
   
 ![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
@@ -21,6 +21,7 @@
 - [Technologies & Tools](#-technologies--tools)
 - [System Architecture](#%EF%B8%8F-system-architecture--folder-structure)
 - [Challenges & Learnings](#-challenges-and-learnings)
+- [Getting Started: test yourself the Virtual Machine]()
 
 <hr>
 
@@ -243,6 +244,8 @@ Logged Users: Number of currently connected users
 Network: IP and MAC address of the network interface
 Sudo: Number of commands executed with sudo
 
+![image](https://github.com/user-attachments/assets/8daddc5f-0d10-4b0e-8a50-787b4193d015)
+
 <hr>
 
 ## 🗂️ System Architecture & Folder Structure
@@ -279,7 +282,7 @@ Sudo: Number of commands executed with sudo
 
 <hr>
 
-## 🖥️ Getting Started: Using the Virtual Machine
+## 🚀 Getting Started: test yourself the Virtual Machine
 
 <hr>
 
