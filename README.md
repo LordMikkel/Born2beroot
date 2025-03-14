@@ -168,8 +168,6 @@ The system's task scheduler that enables:
 
 📊 Monitoring Script
 
-![image](https://github.com/user-attachments/assets/8daddc5f-0d10-4b0e-8a50-787b4193d015)
-
 The monitoring.sh script provides a comprehensive overview of the system's status
 
 ```
@@ -233,18 +231,7 @@ wall "  #Architecture: $arch
 ```
 It collects and displays the following information:
 
-Architecture: Operating system and kernel version
-Physical CPU: Number of physical cores
-Virtual CPU: Number of virtual processors
-Memory Usage: Used/total memory and percentage
-Disk Usage: Used/total disk space and percentage
-CPU Load: Current utilization percentage
-Last Boot: Date and time of the last system start
-LVM Use: Indicates if the system is using LVM
-TCP Connections: Number of established TCP connections
-Logged Users: Number of currently connected users
-Network: IP and MAC address of the network interface
-Sudo: Number of commands executed with sudo
+![image](https://github.com/user-attachments/assets/8daddc5f-0d10-4b0e-8a50-787b4193d015)
 
 <hr>
 
