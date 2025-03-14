@@ -21,7 +21,7 @@
 - [Technologies & Tools](#-technologies--tools)
 - [System Architecture](#%EF%B8%8F-system-architecture--folder-structure)
 - [Challenges & Learnings](#-challenges-and-learnings)
-- [Getting Started: test yourself the Virtual Machine]()
+- [Getting Started: test yourself the Virtual Machine](#-getting-started-test-yourself-the-virtual-machine)
 
 <hr>
 
@@ -168,6 +168,8 @@ The system's task scheduler that enables:
 
 📊 Monitoring Script
 
+![image](https://github.com/user-attachments/assets/8daddc5f-0d10-4b0e-8a50-787b4193d015)
+
 The monitoring.sh script provides a comprehensive overview of the system's status
 
 ```
@@ -243,8 +245,6 @@ TCP Connections: Number of established TCP connections
 Logged Users: Number of currently connected users
 Network: IP and MAC address of the network interface
 Sudo: Number of commands executed with sudo
-
-![image](https://github.com/user-attachments/assets/8daddc5f-0d10-4b0e-8a50-787b4193d015)
 
 <hr>
 
